@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-sm bg-primary">
+    <button class="btn btn-success" (click)="datosServicio()">Peticion Ajax por Servicio</button>
+</nav>
+<div class="card-deck" *ngFor="let noticia of noticias">
+    <div class="card">
+        <a href="{{noticia.url}}" target="_blank"><img class="card-img-top" data-src="{{noticia.urlToImage}}" alt="Card image cap"></a>
+        <div class="card-body">
+            <h4 class="card-title">{{noticia.title}}</h4>
+            <p class="card-text">{{noticia.description}}</p>
+        </div>
+    </div>
+</div>
